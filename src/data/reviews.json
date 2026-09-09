@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rev-01",
+    "name": "Ananya Sharma",
+    "handle": "@ananya.in.paris",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    "text": "I bought the dad trousers and gold hoops from Shweta's link—literally everyone in college asked me if it was Zara! Best ₹1000 I've ever spent.",
+    "productName": "Wide Leg Pleated Slouchy Dad Trousers",
+    "rating": 5,
+    "aesthetic": "Clean Girl"
+  },
+  {
+    "id": "rev-02",
+    "name": "Rhea Kapoor",
+    "handle": "@rheapins",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80",
+    "text": "The French coquette bow clip is SO luxurious in person. Thick satin, super sturdy metal grip. Her curation never misses! 🎀",
+    "productName": "French Ribbon Silk Coquette Bow Hair Clip",
+    "rating": 5,
+    "aesthetic": "Coquette"
+  },
+  {
+    "id": "rev-03",
+    "name": "Sneha Roy",
+    "handle": "@sneha.fits",
+    "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80",
+    "text": "The 'Shop Entire Look' feature saved me hours of browsing. Got the entire brunch outfit for under ₹2,000 on Amazon with fast delivery.",
+    "productName": "Sunday Matcha & Farmers Market Look",
+    "rating": 5,
+    "aesthetic": "College Wardrobe"
+  },
+  {
+    "id": "rev-04",
+    "name": "Diya Malhotra",
+    "handle": "@diyam.aesthetic",
+    "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=200&q=80",
+    "text": "I love how transparent she is with affiliate links and sizing notes. Everything I've bought through her pins has been 10/10 quality.",
+    "productName": "Linen Blend Button-Front Tailored Waistcoat",
+    "rating": 5,
+    "aesthetic": "Minimal Luxury"
+  }
+]

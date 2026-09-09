@@ -1,0 +1,76 @@
+[
+  {
+    "id": "blog-01",
+    "slug": "how-to-build-clean-girl-capsule-wardrobe-on-budget",
+    "title": "How to Build an Everyday 'Clean Girl' Capsule Wardrobe on an Indian Budget",
+    "excerpt": "You don't need a designer bank account to look sleek, expensive, and put-together. Here is my secret 5-piece formula under ₹1000 each.",
+    "date": "September 8, 2026",
+    "readTime": "4 min read",
+    "coverImage": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+    "author": "Shweta 🤍",
+    "tags": ["Clean Girl", "Capsule Wardrobe", "Budget Styling"],
+    "content": [
+      {
+        "heading": "The Philosophy: Crisp Cuts & Subtle Warm Neutrals",
+        "text": "The 'Clean Girl' aesthetic is all about balance—structure paired with ease, warm minimalism over loud logos, and textures that feel luxurious even if they were bought on Amazon or Flipkart for less than dinner."
+      },
+      {
+        "heading": "Step 1: The Non-Negotiable Double-Lined Tank",
+        "text": "Never underestimate a high-quality ribbed tank. Look for a flattering square or boat neckline that frames your collarbones. A heavy knit ensures zero transparency."
+      },
+      {
+        "heading": "Step 2: Draped Dad Trousers over Skinny Jeans",
+        "text": "Swap restrictive denim for slouchy, high-waisted front pleat trousers. They elongate your legs and look instantly editorial when paired with sleek white sneakers or chunky loafers."
+      },
+      {
+        "heading": "Step 3: Gold Hardware that Doesn't Tarnish in 2 Days",
+        "text": "Dainty croissant hoops and layered herringbone chains reflect natural light and pull the entire look into 5-star territory."
+      }
+    ],
+    "featuredProductIds": ["prod-02", "prod-04", "prod-11", "prod-20"]
+  },
+  {
+    "id": "blog-02",
+    "slug": "coquette-aesthetic-accessories-that-elevate-any-outfit",
+    "title": "5 Coquette Accessories Under ₹499 That Instantly Soften Your Look",
+    "excerpt": "Ribbons, delicate lace, pearls, and Mary Janes. Here is how to incorporate feminine romantic touches into your everyday college or work fits.",
+    "date": "September 2, 2026",
+    "readTime": "3 min read",
+    "coverImage": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80",
+    "author": "Shweta 🤍",
+    "tags": ["Coquette", "Accessories", "Hair Trends"],
+    "content": [
+      {
+        "heading": "Why the Bow Phenomenon is Here to Stay",
+        "text": "Bows are an emotional reset button for your outfit. Throw on an oversized satin ribbon clip into a half-up twist, and suddenly you look like you just stepped out of a French romance film."
+      },
+      {
+        "heading": "The Secret: Micro Details",
+        "text": "Instead of full-costume ruffles, incorporate delicate hints—stacked bow rings, dainty pearl chokers, and square-toe Mary Jane flats worn with frill crew socks."
+      }
+    ],
+    "featuredProductIds": ["prod-01", "prod-03", "prod-16", "prod-17"]
+  },
+  {
+    "id": "blog-03",
+    "slug": "amazon-monsoon-fashion-finds-worth-your-money",
+    "title": "Amazon & Flipkart Fashion Finds Under ₹699 That Don't Look Cheap",
+    "excerpt": "I spent hours sifting through reviews so you don't have to. Here are the genuine hidden gems that feel like Zara and Mango.",
+    "date": "August 28, 2026",
+    "readTime": "5 min read",
+    "coverImage": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
+    "author": "Shweta 🤍",
+    "tags": ["Amazon Finds", "Flipkart Deals", "Smart Shopping"],
+    "content": [
+      {
+        "heading": "How to Spot High-End Fabrics Online",
+        "text": "Always look at customer review photos for fabric weight and sheen. Opt for heavyweight cotton poplin, matte ribbing, and viscose-linen blends rather than shiny thin polyester."
+      },
+      {
+        "heading": "My Top 3 Verified Staples",
+        "text": "The poplin boyfriend shirt in sky blue stripe, the pleated tennis skirt with built-in shorts, and the tailored oatmeal linen vest have been my absolute most worn items this season."
+      }
+    ],
+    "featuredProductIds": ["prod-07", "prod-08", "prod-09", "prod-05"]
+  }
+]

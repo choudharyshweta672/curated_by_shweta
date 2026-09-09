@@ -1,0 +1,38 @@
+[
+  {
+    "id": "look-01",
+    "title": "Sunday Matcha & Farmers Market Look",
+    "subtitle": "Effortless Clean Girl Aesthetic",
+    "aesthetic": "Clean Girl",
+    "coverImage": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+    "description": "A crisp, sculpted monochrome aesthetic featuring butter-soft knit, relaxed dad trousers, croissant gold hoops, and a cloud shoulder bag.",
+    "productIds": ["prod-04", "prod-11", "prod-02", "prod-12"]
+  },
+  {
+    "id": "look-02",
+    "title": "Parisian Cafe & Bookshop Romance",
+    "subtitle": "Vintage French Coquette Vibe",
+    "aesthetic": "Coquette",
+    "coverImage": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
+    "description": "Dreamy bows, pleated movements, and velvet ballet flats styled for afternoon iced coffees and reading poetry.",
+    "productIds": ["prod-01", "prod-08", "prod-16", "prod-17"]
+  },
+  {
+    "id": "look-03",
+    "title": "Old Money Campus & Lecture Hall",
+    "subtitle": "Everyday College Wardrobe Essential",
+    "aesthetic": "College Wardrobe",
+    "coverImage": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80",
+    "description": "Chunky bit loafers, heavy cotton book tote, oversized poplin shirt, and tortoiseshell frames for study sessions in style.",
+    "productIds": ["prod-07", "prod-13", "prod-05", "prod-20"]
+  },
+  {
+    "id": "look-04",
+    "title": "Sunset Spritz & Rooftop Dinner",
+    "subtitle": "Minimal Luxury Evening Look",
+    "aesthetic": "Minimal Luxury",
+    "coverImage": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=80",
+    "description": "Tailored linen waistcoat paired with a champagne satin bias-cut slip skirt and organic baroque freshwater pearl.",
+    "productIds": ["prod-09", "prod-14", "prod-03"]
+  }
+]
