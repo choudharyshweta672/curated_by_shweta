@@ -11,9 +11,25 @@ import { formatCurrency } from '../utils/currency';
 export const Home = () => {
   const [quickViewProduct, setQuickViewProduct] = useState(null);
   const [activeBudgetTab, setActiveBudgetTab] = useState(499);
+  const [activeStyle, setActiveStyle] = useState("All");
+  const styles = [
+  "All",
+  "Coquette",
+  "Clean Girl",
+  "Minimal Luxury",
+  "College Wardrobe",
+  "Viral",
+];
+  
 
   // Dynamic products from products.json
-  const trendingFinds = productsData.filter((p) => p.featured).slice(0, 8);
+  const trendingFinds = productsData
+  .filter((p) => p.featured)
+  .filter((p) => {
+    if (activeStyle === "All") return true;
+    return p.aesthetic === activeStyle;
+  })
+  .slice(0, 8);
   const newArrivals = productsData.filter((p) => p.new).slice(0, 4);
   const bestSellers = productsData.filter((p) => p.bestSeller).slice(0, 4);
   const budgetFilteredProducts = productsData.filter((p) => p.price <= activeBudgetTab).slice(0, 4);
@@ -168,14 +184,36 @@ export const Home = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
           <div>
-            <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-rose-deep mb-2">
-              <Flame size={14} />
-              <span>Going Viral On Pinterest</span>
-            </div>
-            <h2 className="font-playfair text-3xl sm:text-4xl text-brown-deep font-bold">
-              Trending Pinterest Finds
-            </h2>
-          </div>
+  <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-rose-deep mb-2">
+    <Flame size={14} />
+    <span>Going Viral On Pinterest</span>
+  </div>
+
+  <h2 className="font-playfair text-4xl sm:text-5xl text-[#3E3028] font-bold">
+    Trending Pinterest Finds ✨
+  </h2>
+
+  <p className="text-[#8A756B] mt-3 mb-6 max-w-xl">
+    Viral Pinterest outfits, soft girl accessories, old money staples and trendy fashion picks curated just for you.
+  </p>
+
+  {/* Pinterest Filter Chips */}
+  <div className="flex flex-wrap gap-3">
+    {styles.map((style) => (
+      <button
+        key={style}
+        onClick={() => setActiveStyle(style)}
+        className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+          activeStyle === style
+            ? "bg-[#D98B9F] text-white shadow-lg scale-105"
+            : "bg-white border border-[#F2DDD9] text-[#6F5A52] hover:bg-[#FFF4F6]"
+        }`}
+      >
+        {style}
+      </button>
+    ))}
+  </div>
+</div>
           <Link
             to="/pinterest-finds"
             className="text-sm font-semibold text-rose-deep hover:text-brown-deep transition-colors flex items-center gap-1 group"

@@ -155,6 +155,7 @@
 // };
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { Heart, Star, Eye, ShoppingBag } from "lucide-react";
 import { useWishlist } from "../context/WishlistContext";
 import { formatCurrency } from "../utils/currency";
@@ -248,7 +249,7 @@ export const ProductCard = ({ product, onQuickView }) => {
           </div>
 
           <span className="text-[#8A756B] text-xs">
-            ({product.reviews || "120"})
+            ({product.reviewsCount || "120"})
           </span>
         </div>
 
@@ -267,14 +268,14 @@ export const ProductCard = ({ product, onQuickView }) => {
 
         {/* Buy Button */}
         <a
-          href={product.affiliateLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 w-full bg-[#D98B9F] hover:bg-[#C77289] text-white rounded-full py-3 text-sm font-medium flex items-center justify-center gap-2 transition-all duration-300"
-        >
-          <ShoppingBag size={16} />
-          Buy on Amazon
-        </a>
+  href={product.amazonLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 w-full bg-[#D98B9F] hover:bg-[#C77289] text-white rounded-full py-3 text-sm font-medium flex items-center justify-center gap-2 transition-all duration-300"
+>
+  <ShoppingBag size={16} />
+  Buy on Amazon
+</a>
 
       </div>
     </div>
