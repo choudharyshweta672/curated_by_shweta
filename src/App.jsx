@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { WishlistProvider } from './context/WishlistContext';
-import { Navbar } from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 import { Footer } from './components/Footer';
 import { SearchModal } from './components/SearchModal';
 
@@ -61,7 +61,7 @@ function App() {
           <Navbar onOpenSearch={() => setSearchOpen(true)} />
 
           {/* Main Routing Container */}
-          <main className="flex-grow">
+         <main className="flex-grow pt-24">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />

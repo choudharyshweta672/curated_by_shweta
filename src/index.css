@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -20,7 +20,7 @@
   }
 
   /* Custom Aesthetic Scrollbar */
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
   }
@@ -58,4 +58,183 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+} */ 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- COLORS ---------- */
+
+:root{
+
+  --bg:#FFF8F5;
+  --card:#FFFFFF;
+
+  --rose:#D98B9F;
+  --rose-light:#F5D8DE;
+
+  --beige:#EAD8C0;
+
+  --text:#3E3028;
+  --sub:#8A756B;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:"Poppins",sans-serif;
+  background:#FFF8F5;
+  color:#3E3028;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{
+  font-family:"Playfair Display",serif;
+}
+
+/* ---------- REUSABLE ---------- */
+
+.section{
+  @apply max-w-7xl mx-auto px-6 py-20;
+}
+
+.section-title{
+  @apply text-4xl md:text-5xl font-semibold text-[#3E3028];
+}
+
+.section-subtitle{
+  @apply text-[#8A756B] mt-3 max-w-xl;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.primary-btn{
+  @apply bg-[#D98B9F] text-white rounded-full px-7 py-3 font-medium transition-all duration-300;
+}
+
+.primary-btn:hover{
+  background:#C87087;
+  transform:translateY(-2px);
+}
+
+.secondary-btn{
+  @apply border border-[#D98B9F] rounded-full px-7 py-3 text-[#D98B9F] font-medium transition-all duration-300;
+}
+
+.secondary-btn:hover{
+  background:#FDEDEF;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.icon-btn{
+  @apply h-10 w-10 rounded-full bg-white flex items-center justify-center shadow-sm transition;
+}
+
+.icon-btn:hover{
+  @apply bg-rose-50 text-rose-500;
+}
+
+.badge{
+  @apply absolute -top-1 -right-1 bg-[#D98B9F] text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center;
+}
+
+.login-btn{
+  @apply bg-[#D98B9F] text-white px-5 py-2 rounded-full text-sm font-medium transition;
+}
+
+.login-btn:hover{
+  background:#C87087;
+}
+
+/* ---------- CARDS ---------- */
+
+.product-card{
+  @apply bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300;
+}
+
+.product-card:hover{
+  transform:translateY(-8px);
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#E7C4CC;
+  border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+  background:#FFF8F5;
+}
+/* ================= HERO ANIMATIONS ================= */
+
+@keyframes floatCard {
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(-12px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+.animate-float{
+  animation:floatCard 5s ease-in-out infinite;
+}
+
+.hero-bg{
+  background:linear-gradient(
+      135deg,
+      #FFF8F5,
+      #FFF2F5,
+      #FFF8F5
+  );
+}
+/* ================= PRODUCT CARD ================= */
+
+.product-card{
+  transition:all .35s ease;
+}
+
+.product-card:hover{
+  transform:translateY(-8px);
+}
+
+.product-image{
+  transition:transform .5s ease;
+}
+
+.product-card:hover .product-image{
+  transform:scale(1.08);
+}
+
+.discount-pill{
+  background:#D98B9F;
+  color:white;
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:11px;
+  font-weight:600;
+}
+
+.pinterest-pill{
+  background:white;
+  color:#D98B9F;
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:11px;
+  font-weight:600;
 }

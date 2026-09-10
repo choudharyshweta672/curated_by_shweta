@@ -8,7 +8,6 @@ import { ProductCard } from '../components/ProductCard';
 import { QuickViewModal } from '../components/QuickViewModal';
 import { AffiliateNotice } from '../components/AffiliateNotice';
 import { formatCurrency } from '../utils/currency';
-
 export const Home = () => {
   const [quickViewProduct, setQuickViewProduct] = useState(null);
   const [activeBudgetTab, setActiveBudgetTab] = useState(499);
@@ -40,128 +39,126 @@ export const Home = () => {
   return (
     <div className="pt-24 sm:pt-28 pb-12">
       
-      {/* 1. HERO COLLAGE SECTION */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-8 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
-          {/* Left Hero Text */}
-          <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blush-light border border-blush text-xs font-semibold uppercase tracking-wider text-rose-deep shadow-2xs">
-              <Sparkles size={13} className="text-rose-deep animate-pulse" />
-              <span>Pinterest Fashion Creator & Curator</span>
-            </div>
+      {/* ================= HERO SECTION V2 ================= */}
 
-            <h1 className="font-playfair text-4xl sm:text-5xl xl:text-6xl text-brown-deep font-bold leading-[1.15] tracking-tight">
-              Minimal feminine luxury, curated for your dream wardrobe.
-            </h1>
+<section className="relative overflow-hidden rounded-[40px] mx-4 lg:mx-8 bg-gradient-to-br from-[#FFF8F5] via-[#FFF2F5] to-[#FDF6F2] border border-[#F5E5E8]">
 
-            <p className="text-base sm:text-lg text-brown-muted max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
-              Stop scrolling for hours. Explore viral Pinterest girl staples, Clean Girl capsule pieces, and Coquette accessories—verified for quality on Amazon & Flipkart under ₹999.
-            </p>
+  {/* Background circles */}
+  <div className="absolute top-0 right-0 w-72 h-72 bg-pink-200/20 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-100/30 rounded-full blur-3xl"></div>
 
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
-              <Link
-                to="/shop"
-                className="px-8 py-3.5 rounded-full bg-rose-dusty hover:bg-rose-deep text-white font-medium text-sm transition-all shadow-card hover:shadow-card-hover flex items-center gap-2 group"
-              >
-                <span>Shop All Finds</span>
-                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link
-                to="/pinterest-finds"
-                className="px-7 py-3.5 rounded-full bg-white hover:bg-cream text-brown-deep font-medium text-sm border border-cream shadow-soft transition-all"
-              >
-                Explore Viral Pins ✨
-              </Link>
-            </div>
+  <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
-            {/* Micro proof badges */}
-            <div className="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-brown-muted">
-              <div className="flex items-center gap-1.5">
-                <CheckCircle size={15} className="text-rose-deep" />
-                <span>Verified Quality</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle size={15} className="text-rose-deep" />
-                <span>Budget Under ₹999</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle size={15} className="text-rose-deep" />
-                <span>Direct Affiliate Links</span>
-              </div>
-            </div>
-          </div>
+    {/* LEFT CONTENT */}
+    <div>
 
-          {/* Right Hero Pinterest Collage */}
-          <div className="lg:col-span-6">
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 relative">
-              
-              {/* Floating aesthetic pill badge */}
-              <div className="absolute -top-4 -right-2 sm:-right-4 z-20 bg-white/95 backdrop-blur-md rounded-full px-4 py-2 shadow-card border border-cream flex items-center gap-2 animate-float-slow">
-                <span className="text-xs">🤍</span>
-                <span className="font-cormorant font-semibold text-sm text-brown-deep">
-                  Clean Girl • Coquette • Luxury
-                </span>
-              </div>
+      <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-pink-200 rounded-full px-4 py-2 mb-6 shadow-sm">
+        <Sparkles size={14} className="text-pink-500" />
+        <span className="text-xs font-semibold tracking-widest uppercase text-pink-600">
+          Pinterest Curated Fashion
+        </span>
+      </div>
 
-              {/* Staggered Column 1 */}
-              <div className="space-y-3 sm:space-y-4">
-                <div className="relative aspect-[3/4] rounded-28 overflow-hidden shadow-card group">
-                  <img
-                    src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
-                    alt="Pinterest Look 1"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/40 via-transparent to-transparent flex items-end p-4">
-                    <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-xs font-semibold text-brown-deep">
-                      Coquette Romantic 🎀
-                    </span>
-                  </div>
-                </div>
-                <div className="relative aspect-[4/3] rounded-28 overflow-hidden shadow-card group">
-                  <img
-                    src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80"
-                    alt="Gold Hoops"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-semibold text-brown-deep">
-                    ₹289 Gold Hoops
-                  </div>
-                </div>
-              </div>
+      <h1 className="font-playfair text-5xl lg:text-7xl leading-[1.05] text-[#3E3028] font-bold">
+        Wear the Pinterest Girl Lifestyle.
+      </h1>
 
-              {/* Staggered Column 2 */}
-              <div className="space-y-3 sm:space-y-4 pt-6 sm:pt-8">
-                <div className="relative aspect-[4/3] rounded-28 overflow-hidden shadow-card group">
-                  <img
-                    src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80"
-                    alt="French Bow"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-semibold text-brown-deep">
-                    ₹199 French Bow 🎀
-                  </div>
-                </div>
-                <div className="relative aspect-[3/4] rounded-28 overflow-hidden shadow-card group">
-                  <img
-                    src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80"
-                    alt="Linen Vest"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/40 via-transparent to-transparent flex items-end p-4">
-                    <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-xs font-semibold text-brown-deep">
-                      Clean Girl Staples ☕
-                    </span>
-                  </div>
-                </div>
-              </div>
+      <p className="mt-6 text-lg text-[#6F5A52] leading-8 max-w-xl">
+        Handpicked outfits, jewelry, bags and accessories that look straight out
+        of Pinterest — from Soft Girl to Old Money, all under your budget.
+      </p>
 
-            </div>
-          </div>
+      <div className="flex flex-wrap gap-4 mt-8">
 
+        <Link
+          to="/shop"
+          className="px-8 py-4 rounded-full bg-[#D98B9F] text-white font-medium shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2"
+        >
+          Shop New Arrivals
+          <ArrowRight size={18}/>
+        </Link>
+
+        <Link
+          to="/collections"
+          className="px-8 py-4 rounded-full bg-white border border-[#EAD8C0] text-[#3E3028] font-medium hover:bg-[#FFF5F7] transition-all duration-300"
+        >
+          Explore Collections
+        </Link>
+
+      </div>
+
+      {/* STATS */}
+      <div className="grid grid-cols-3 gap-6 mt-12">
+
+        <div>
+          <h3 className="text-3xl font-bold text-[#3E3028]">500+</h3>
+          <p className="text-sm text-[#8A756B] mt-1">Pinterest Finds</p>
         </div>
-      </section>
 
+        <div>
+          <h3 className="text-3xl font-bold text-[#3E3028]">50+</h3>
+          <p className="text-sm text-[#8A756B] mt-1">Outfit Collections</p>
+        </div>
+
+        <div>
+          <h3 className="text-3xl font-bold text-[#3E3028]">100%</h3>
+          <p className="text-sm text-[#8A756B] mt-1">Verified Picks</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* RIGHT COLLAGE */}
+    <div className="relative">
+
+      <div className="grid grid-cols-2 gap-4">
+
+        <img
+          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+          className="rounded-[30px] h-[360px] object-cover shadow-xl"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80"
+          className="rounded-[30px] h-[280px] mt-16 object-cover shadow-xl"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80"
+          className="rounded-[30px] h-[240px] -mt-8 object-cover shadow-xl"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80"
+          className="rounded-[30px] h-[330px] object-cover shadow-xl"
+        />
+
+      </div>
+
+      {/* Floating Card */}
+      <div className="absolute top-4 left-4 bg-white rounded-2xl px-4 py-3 shadow-xl border border-pink-100">
+        <p className="text-xs text-gray-500">Trending Today</p>
+        <h4 className="font-semibold text-[#3E3028]">Old Money Blazer</h4>
+        <p className="text-pink-500 font-bold">₹899</p>
+      </div>
+
+      {/* Discount Card */}
+      <div className="absolute bottom-4 right-2 bg-[#FFF1F4] rounded-2xl px-5 py-4 shadow-xl border border-pink-200">
+        <p className="text-xs uppercase tracking-widest text-pink-500">
+          Soft Girl Collection
+        </p>
+        <h3 className="text-2xl font-bold text-[#D98B9F]">
+          30% OFF
+        </h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+      
       {/* Global Transparency Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <AffiliateNotice />
